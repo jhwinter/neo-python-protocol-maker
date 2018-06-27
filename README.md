@@ -13,8 +13,8 @@ One click (if you do it right) to update `protocol.json`
 3. [geckodriver](https://github.com/mozilla/geckodriver/releases) if using Firefox. If there is any issue, I recommend reading [this](https://stackoverflow.com/questions/40208051/selenium-using-python-geckodriver-executable-needs-to-be-in-path)
 
 ## Getting Started
-### 1. Download the package
-
+### 1. Clone/Download the package
+`git clone https://github.com/jonathanhwinter/neo-cli-protocol-maker.git`
 ### 2. Install the dependencies
 `pip install -r requirements.txt`
 
