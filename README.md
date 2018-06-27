@@ -13,10 +13,28 @@ One click (if you do it right) to update `protocol.json`
 3. [geckodriver](https://github.com/mozilla/geckodriver/releases) if using Firefox. If there is any issue, I recommend reading [this](https://stackoverflow.com/questions/40208051/selenium-using-python-geckodriver-executable-needs-to-be-in-path)
 
 ## Getting Started
-### 1. Clone/Download the package
+### 1. Clone/Download neo-python and this package
+`git clone https://github.com/CityOfZion/neo-python.git` 
+
+and in a neighboring directory:
+
 `git clone https://github.com/jonathanhwinter/neo-cli-protocol-maker.git`
+
 ### 2. Install the dependencies
-`pip install -r requirements.txt`
+```
+# create virtual environment and activate
+
+python3.6 -m venv venv # this can also be python3 -m venv venv depending on your environment
+source venv/bin/activate
+
+# install the package in an editable form
+(venv) pip install -e .
+```
+
+```
+cd ../neo-cli-protocol-maker
+pip install -r requirements.txt
+```
 
 ### 3. Run the Package
 Run the script `python make_protocol.py`
