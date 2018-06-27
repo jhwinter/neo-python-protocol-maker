@@ -4,10 +4,11 @@ import re
 import time
 
 from selenium import webdriver
-#from selenium.webdriver.common.keys import Keys  # didn't need this stuff
-#from bs4 import BeautifulSoup, SoupStrainer
+# from selenium.webdriver.common.keys import Keys  # didn't need this stuff
+# from bs4 import BeautifulSoup, SoupStrainer
 
-from .make_json import write_to_json
+from make_json import write_to_json
+
 
 def main():
     """
@@ -43,8 +44,5 @@ def main():
     fp = '../neo-python/neo/data/protocol.mainnet.json'
     write_to_json(seed_list, fp)
     print("end>>>>>>>>>>>>>")
+    browser.close()
     return True
-
-
-if __name__ == "__main__":
-    main()

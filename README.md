@@ -35,7 +35,9 @@ source venv/bin/activate
 cd ../neo-cli-protocol-maker
 pip install -r requirements.txt
 ```
-
+### Note: 
+I added in the default file path for protocol.mainnet.json for testing. You just have to change the file path 
+in make_protocol.py if you want to test against it. 
 ### 3. Run the Package
 Run the script `python make_protocol.py`
 
