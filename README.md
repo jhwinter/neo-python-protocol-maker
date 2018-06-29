@@ -35,11 +35,10 @@ source venv/bin/activate
 cd ../neo-cli-protocol-maker
 pip install -r requirements.txt
 ```
-### Note: 
-I added in the default file path for protocol.mainnet.json for testing. You just have to change the file path 
-in make_protocol.py if you want to test against it. 
+
 ### 3. Run the Package
-Run the script `python make_protocol.py`
+Run the script `python make_protocol.py` or `python scheduler.py` to make it run every hour
 
 ### 4. That's it!
-You can run neo-python normally. It should automatically connect to live nodes and reconfigure itself to run on the best nodes every day.
+You can run neo-python normally. It should automatically connect to live nodes and 
+reconfigure itself to run on the best nodes every hour.
