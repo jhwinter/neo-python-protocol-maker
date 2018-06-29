@@ -1,7 +1,7 @@
-from apscheduler.schedulers.blocking import BlockingScheduler
+from apscheduler.schedulers.background import BackgroundScheduler
 from make_protocol import main
 
-
-scheduler = BlockingScheduler()
-scheduler.add_job(main, 'interval', minutes=30)
-scheduler.start()
+if __name__ == '__main__':
+    scheduler = BackgroundScheduler()
+    scheduler.add_job(main, 'interval', minutes=15)
+    scheduler.start()
