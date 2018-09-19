@@ -18,7 +18,7 @@ One click (if you do it right) to update `protocol.json`
 
 and in a neighboring directory:
 
-`git clone https://github.com/jonathanhwinter/neo-python-protocol-maker.git`
+`git clone https://github.com/jhwinter/neo-python-protocol-maker.git`
 
 ### 2. Install the dependencies
 ```
